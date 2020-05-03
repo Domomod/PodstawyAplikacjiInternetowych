@@ -6,6 +6,11 @@ session_start();
     echo "Próba połączenia z bazą wywowała błąd:</br>".mysqli_connect_error();
     exit();
   }
+  if(isset($_SESSION['sql']))
+  {
+    echo "<p style='color:green'> {$_SESSION['sql']}</p>";
+    unset($_SESSION['sql']);
+  }
 
   $sql="SELECT * FROM pracownicy";
   $result=$link->query($sql);

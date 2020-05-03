@@ -16,9 +16,10 @@ print<<<KONIEC
     </form>
 KONIEC;
 
-if(isset($_SESSION['sql_error']))
+if(isset($_SESSION['sql']))
 {
-  echo "<p style='color:red'> {$_SESSION['sql_error']}</p>";
+  echo "<p style='color:red'> {$_SESSION['sql']}</p>";
+  unset($_SESSION['sql']);
 }
 
 echo "<a href='file06_get.php'>Wyświetl pracowników</a>";

@@ -18,11 +18,12 @@ if(!$link)
       $result=$stmt->execute();
       if(!$result)
       {
-        $_SESSION['sql_error']="Napotkano błąd sql:</br>".mysqli_error($link);
+        $_SESSION['sql']="Napotkano błąd sql:</br>".mysqli_error($link);
         header('Location: file06_post.php');
       }
       else
       {
+        $_SESSION['sql']="Dodano nowego pracownika.</br>".mysqli_error($link);
         header('Location: file06_get.php');
       }
       $stmt->close();
