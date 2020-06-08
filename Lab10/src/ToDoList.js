@@ -10,7 +10,6 @@ function ToDoList(props){
         }</div>
     else
         return <div className="underlined-row">Todo list is empty</div>
-    
 }
 
 export default ToDoList
