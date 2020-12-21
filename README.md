@@ -1,4 +1,4 @@
-!Hosting padł!
+!Hosting padł, linki nieatualne!
 
 # PodstawyAplikacjiInternetowych
 
