@@ -1,3 +1,5 @@
+!Hosting padł!
+
 # PodstawyAplikacjiInternetowych
 
 ## Linki do rozwiązań
